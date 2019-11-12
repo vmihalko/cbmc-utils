@@ -1,0 +1,1626 @@
+[
+  {
+    "program": "CBMC 5.11 (n/a)"
+  },
+  {
+    "result": [
+      {
+        "description": "array `a' lower bound in a[(signed long int)i]",
+        "property": "bar.array_bounds.1",
+        "status": "SUCCESS"
+      },
+      {
+        "description": "array `a' upper bound in a[(signed long int)i]",
+        "property": "bar.array_bounds.2",
+        "status": "FAILURE",
+        "trace": [
+          {
+            "hidden": false,
+            "sourceLocation": null,
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "31",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": true,
+            "internal": true,
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_dead_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "11",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "10",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_is_new_array",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "14",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "12",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "13",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "15",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_next_thread_id",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_pipe_count",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "29",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0u",
+              "name": "integer",
+              "type": "unsigned int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_rounding_mode",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "20",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_thread_id",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_threads_exited",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "unknown"
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "31",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foobar.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "main",
+              "identifier": "main",
+              "sourceLocation": {
+                "file": "foobar.c",
+                "line": "3",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "foobar.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_foo",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foobar.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "foo",
+              "identifier": "foo",
+              "sourceLocation": {
+                "file": "foo.c",
+                "line": "1",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "foobar.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "2",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "c",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 2,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000101",
+              "data": "5",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "5",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000100",
+              "data": "4",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "foo.array_bounds.2",
+            "reason": "array `c' upper bound in c[(signed long int)i]",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "failure",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000011",
+              "data": "3",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "foo.array_bounds.2",
+            "reason": "array `c' upper bound in c[(signed long int)i]",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "failure",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000010",
+              "data": "2",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "foo#return_value",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "14",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "foo",
+              "identifier": "foo",
+              "sourceLocation": {
+                "file": "foo.c",
+                "line": "1",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "15",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_foo",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foobar.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_bar",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foobar.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "bar",
+              "identifier": "bar",
+              "sourceLocation": {
+                "file": "bar.c",
+                "line": "1",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "foobar.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "bar.c",
+              "function": "bar",
+              "line": "2",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "bar.c",
+              "function": "bar",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "bar.c",
+              "function": "bar",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000101",
+              "data": "5",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "bar.c",
+              "function": "bar",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "bar.c",
+              "function": "bar",
+              "line": "5",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "bar.c",
+              "function": "bar",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000100",
+              "data": "4",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "bar.array_bounds.2",
+            "reason": "array `a' upper bound in a[(signed long int)i]",
+            "sourceLocation": {
+              "file": "bar.c",
+              "function": "bar",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "failure",
+            "thread": 0
+          }
+        ]
+      },
+      {
+        "description": "array `c' lower bound in c[(signed long int)i]",
+        "property": "foo.array_bounds.1",
+        "status": "SUCCESS"
+      },
+      {
+        "description": "array `c' upper bound in c[(signed long int)i]",
+        "property": "foo.array_bounds.2",
+        "status": "FAILURE",
+        "trace": [
+          {
+            "hidden": false,
+            "sourceLocation": null,
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "31",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": true,
+            "internal": true,
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_dead_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "11",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "10",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_is_new_array",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "14",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "12",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "13",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "15",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_next_thread_id",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_pipe_count",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "29",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0u",
+              "name": "integer",
+              "type": "unsigned int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_rounding_mode",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "20",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_thread_id",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_threads_exited",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "unknown"
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "31",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foobar.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "main",
+              "identifier": "main",
+              "sourceLocation": {
+                "file": "foobar.c",
+                "line": "3",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "foobar.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_foo",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foobar.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "foo",
+              "identifier": "foo",
+              "sourceLocation": {
+                "file": "foo.c",
+                "line": "1",
+                "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "foobar.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "2",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "c",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 2,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000101",
+              "data": "5",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "5",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000100",
+              "data": "4",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "foo.array_bounds.2",
+            "reason": "array `c' upper bound in c[(signed long int)i]",
+            "sourceLocation": {
+              "file": "foo.c",
+              "function": "foo",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/junk_folder/two_c_program"
+            },
+            "stepType": "failure",
+            "thread": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION FAILED",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "failure"
+  }
+]
