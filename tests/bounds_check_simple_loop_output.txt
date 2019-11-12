@@ -1,0 +1,14 @@
+badloop.c: In function ‘sum’:
+badloop.c:6: error: array_bounds : array `arr' upper bound in arr[(signed long int)i]
+badloop.c:12: note: from_entry_point_function:function-call:main
+badloop.c:12: note: function_parameter_set_in:entry_point_function:12:integer:        argc = 4
+badloop.c:12: note: function_parameter_set_in:entry_point_function:12:pointer:        argv = argv'
+badloop.c:13: note: main:13:integer:        ivar = 0
+badloop.c:13: note: from_main:function-call:__isoc99_sscanf
+badloop.c:13: note: from_main:function-return:main
+badloop.c:13: note: main:13:integer:        ivar = 19
+badloop.c:15: note: from_main:function-call:sum
+badloop.c:15: note: function_parameter_set_in:main:15:integer:        i = 19
+badloop.c:3: note: sum:3:integer:        res = 0
+badloop.c:4: note: sum:4:array:        arr = ['0', '0', '0', '0', '0']
+badloop.c:6: note: array `arr' upper bound in arr[(signed long int)i]
