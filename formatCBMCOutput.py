@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 '''
 usage: cbmc <file> <checks> --json-ui | ./format_cbmc_output 
 '''
