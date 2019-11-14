@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
+#!/bin/python3
 '''
-usage: cbmc <file> <checks> --verbosity 4 --json-ui | ./format_cbmc_output 
+usage: cbmc <file> <checks> --json-ui | ./format_cbmc_output 
 '''
 
 import sys, json
@@ -75,9 +75,13 @@ def parse_trace(trace_arr):
 def parse_it():
     parsed = json.load(sys.stdin)
     errors = defaultdict(list)
+    
+    if {'cProverStatus': 'success'} in parsed:
+        return errors
 
-    for result in parsed[-3]['result']:
-        if result['status'] == "FAILURE":
+    for index, result in enumerate(parsed[-3]['result']):
+        if result['status'] == "FAILURE" and\
+                'sourceLocation' in result['trace'][-1:][0]: #get rid of errors in cbmc functions
             info = result['trace'][-1:]
             trace = parse_trace(result['trace'])
             source_loc = info[0]['sourceLocation']
