@@ -73,26 +73,42 @@ def parse_trace(trace_arr):
 
 
 def parse_it():
-    parsed = json.load(sys.stdin)
     errors = defaultdict(list)
-    
+    try:
+        parsed = json.load(sys.stdin)
+    except ValueError:
+        print(f"Error: CBMC_WARNING:{NL}cbmc: fatal error: CBMC crashed")
+        return errors
+
+    if 'cProverStatus' not in parsed[-1]:
+        print('blol', parsed[-1])
+        print(f"Error: CBMC_WARNING:{NL}cbmc: fatal error: CBMC crashed")
+        return errors
+
     if {'cProverStatus': 'success'} in parsed:
         return errors
 
-    for index, result in enumerate(parsed[-3]['result']):
-        if result['status'] == "FAILURE" and\
-                'sourceLocation' in result['trace'][-1:][0]: #get rid of errors in cbmc functions
-            info = result['trace'][-1:]
+    for result in parsed[-3]['result']:
+        if result['status'] == "FAILURE": #and\
+            if 'sourceLocation' not in result['trace'][-1]: #memory leak detected\
+                file_name = '<unknown>'
+                fun_name  = '<unknown>'
+                line_num  = '<unknown>'
+            
+                reason = result['description']
+                proprty = result['property']
+            else:
+                source_loc = result['trace'][-1]['sourceLocation']
+                file_name = source_loc['file']
+                fun_name = source_loc['function']
+                line_num = source_loc['line']
+
+                info = result['trace'][-1]
+                reason = info['reason']
+                proprty = info['property']
+                
             trace = parse_trace(result['trace'])
-            source_loc = info[0]['sourceLocation']
-
-            file_name = source_loc['file']
-            fun_name = source_loc['function']
-            line_num = source_loc['line']
-
-            reason = info[0]['reason']
-            proprty = info[0]['property']
-
+            
             errors[(file_name, fun_name)].append(
                 (line_num, reason, proprty, trace))
     return errors
@@ -101,13 +117,16 @@ def parse_it():
 def print_it(error_dict):
     for file_and_func_name in error_dict.keys():
         file_name, func_name = file_and_func_name
-        print(f"{file_name}: In function ‘{func_name}’:")
         for err in error_dict[file_and_func_name]:
+            err_prefix = "Error: CBMC_WARNING:"
+            print(f"{err_prefix}")
+            if file_name != '<unknown>' and func_name != '<unknown>':
+                print(f"{file_name}: scope_hint: In function ‘{func_name}’:")
             line_num, proprty, trace = err[0], err[1], err[3]
             reason = err[2].split('.')[1]
             print(
-                f"{file_name}:{line_num}: error: {reason} : {proprty}{NL}{trace}"
-                , end="")
+                f"{file_name}:{line_num}: error: {reason} : {proprty}{NL}{trace}")
+
 
 
 print_it(parse_it())

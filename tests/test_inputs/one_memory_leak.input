@@ -1,0 +1,1003 @@
+[
+  {
+    "program": "CBMC 5.11 (n/a)"
+  },
+  {
+    "result": [
+      {
+        "description": "dynamically allocated memory never freed in __CPROVER_memory_leak == NULL",
+        "property": "__CPROVER__start.memory-leak.1",
+        "status": "FAILURE",
+        "trace": [
+          {
+            "hidden": false,
+            "sourceLocation": null,
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "31",
+                "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+              }
+            },
+            "hidden": true,
+            "internal": true,
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_dead_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "11",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "10",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_is_new_array",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "14",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "12",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "13",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "15",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_next_thread_id",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "8",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_pipe_count",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "29",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0u",
+              "name": "integer",
+              "type": "unsigned int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_rounding_mode",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "20",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_thread_id",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "6",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_threads_exited",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "7",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "unknown"
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "31",
+                "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "main",
+              "identifier": "main",
+              "sourceLocation": {
+                "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+                "line": "3",
+                "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "str",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "((char *)NULL)",
+              "name": "pointer",
+              "type": "char *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "function": {
+              "displayName": "malloc",
+              "identifier": "malloc",
+              "sourceLocation": {
+                "file": "<builtin-library-malloc>",
+                "line": "6",
+                "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000001111",
+              "data": "15ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "malloc_res",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "11",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "malloc_value",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "12",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "dynamic_object1",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "12",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 2,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 3,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 4,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 5,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 6,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 7,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 8,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 9,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 10,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 11,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 12,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 13,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 14,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "unsigned char",
+                    "width": 8
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "malloc_value",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "12",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "malloc_res",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "12",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "15",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "record_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "18",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "record_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "18",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "__CPROVER_malloc_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "19",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "20",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_is_new_array",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "21",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "record_may_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "24",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "record_may_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "24",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "1",
+              "data": true,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "25",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "malloc#return_value",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "27",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "function": {
+              "displayName": "malloc",
+              "identifier": "malloc",
+              "sourceLocation": {
+                "file": "<builtin-library-malloc>",
+                "line": "6",
+                "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "28",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "return_value_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "str",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "4",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "pointer",
+              "type": "char *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "main#return_value",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "5",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "main",
+              "identifier": "main",
+              "sourceLocation": {
+                "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+                "line": "3",
+                "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "function": "main",
+              "line": "5",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "return'",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": true,
+            "mode": "unknown",
+            "outputID": "return",
+            "sourceLocation": {
+              "file": "test_source_files/memory_leak_programs/one_memory_leak.c",
+              "line": "3",
+              "workingDirectory": "/home/vmihalko/rh/aufover-cbmc/tests_new"
+            },
+            "stepType": "output",
+            "thread": 0,
+            "values": [
+              {
+                "binary": "00000000000000000000000000000000",
+                "data": "0",
+                "name": "integer",
+                "type": "signed int",
+                "width": 32
+              }
+            ]
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": true,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "hidden": false,
+            "internal": true,
+            "property": "__CPROVER__start.memory-leak.1",
+            "reason": "dynamically allocated memory never freed in __CPROVER_memory_leak == NULL",
+            "stepType": "failure",
+            "thread": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION FAILED",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "failure"
+  }
+]

@@ -1,0 +1,39 @@
+Error: CBMC_WARNING:
+../test_source_files/two_c_program/bar.c: scope_hint: In function ‘bar’:
+../test_source_files/two_c_program/bar.c:7: error: array_bounds : array `a' upper bound in a[(signed long int)i]
+../test_source_files/two_c_program/foobar.c:3: note: from_entry_point_function:function-call:main
+../test_source_files/two_c_program/foobar.c:4: note: from_main:function-call:foo
+../test_source_files/two_c_program/foo.c:2: note: foo:2:array:        a = ['0', '0']
+../test_source_files/two_c_program/foo.c:3: note: foo:3:array:        c = ['0', '0', '0']
+../test_source_files/two_c_program/foo.c:4: note: foo:4:integer:        i = 0
+../test_source_files/two_c_program/foo.c:4: note: foo:4:integer:        i = 5
+../test_source_files/two_c_program/foo.c:5: note: foo:5:integer:        b = 0
+../test_source_files/two_c_program/foo.c:7: note: foo:7:integer:        i = 4
+../test_source_files/two_c_program/foo.c:8: note: array `c' upper bound in c[(signed long int)i]
+../test_source_files/two_c_program/foo.c:8: note: foo:8:integer:        b = 0
+../test_source_files/two_c_program/foo.c:7: note: foo:7:integer:        i = 3
+../test_source_files/two_c_program/foo.c:7: note: foo:7:integer:        i = 2
+../test_source_files/two_c_program/foo.c:7: note: foo:7:integer:        i = 1
+../test_source_files/two_c_program/foo.c:7: note: foo:7:integer:        i = 0
+../test_source_files/two_c_program/foo.c:15: note: from_foo:function-return:foo
+../test_source_files/two_c_program/foobar.c:4: note: from_main:function-call:bar
+../test_source_files/two_c_program/bar.c:2: note: bar:2:array:        a = ['0', '0']
+../test_source_files/two_c_program/bar.c:3: note: bar:3:integer:        i = 0
+../test_source_files/two_c_program/bar.c:3: note: bar:3:integer:        i = 5
+../test_source_files/two_c_program/bar.c:4: note: bar:4:integer:        b = 0
+../test_source_files/two_c_program/bar.c:6: note: bar:6:integer:        i = 4
+../test_source_files/two_c_program/bar.c:7: note: array `a' upper bound in a[(signed long int)i]
+
+Error: CBMC_WARNING:
+../test_source_files/two_c_program/foo.c: scope_hint: In function ‘foo’:
+../test_source_files/two_c_program/foo.c:8: error: array_bounds : array `c' upper bound in c[(signed long int)i]
+../test_source_files/two_c_program/foobar.c:3: note: from_entry_point_function:function-call:main
+../test_source_files/two_c_program/foobar.c:4: note: from_main:function-call:foo
+../test_source_files/two_c_program/foo.c:2: note: foo:2:array:        a = ['0', '0']
+../test_source_files/two_c_program/foo.c:3: note: foo:3:array:        c = ['0', '0', '0']
+../test_source_files/two_c_program/foo.c:4: note: foo:4:integer:        i = 0
+../test_source_files/two_c_program/foo.c:4: note: foo:4:integer:        i = 5
+../test_source_files/two_c_program/foo.c:5: note: foo:5:integer:        b = 0
+../test_source_files/two_c_program/foo.c:7: note: foo:7:integer:        i = 4
+../test_source_files/two_c_program/foo.c:8: note: array `c' upper bound in c[(signed long int)i]
+

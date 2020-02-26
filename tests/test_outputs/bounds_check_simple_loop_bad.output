@@ -1,0 +1,23 @@
+Error: CBMC_WARNING:
+test_source_files/bounds_check_simple_loop_bad.c: scope_hint: In function ‘main’:
+test_source_files/bounds_check_simple_loop_bad.c:6: error: array_bounds : array `array' lower bound in array[(signed long int)a]
+test_source_files/bounds_check_simple_loop_bad.c:1: note: from_entry_point_function:function-call:main
+test_source_files/bounds_check_simple_loop_bad.c:2: note: main:2:integer:        a = 0
+test_source_files/bounds_check_simple_loop_bad.c:2: note: main:2:integer:        a = 5
+test_source_files/bounds_check_simple_loop_bad.c:3: note: main:3:array:        array = ['0', '0', '0', '0', '0']
+test_source_files/bounds_check_simple_loop_bad.c:6: note: array `array' upper bound in array[(signed long int)a]
+test_source_files/bounds_check_simple_loop_bad.c:6: note: main:6:integer:        a = 536870914
+test_source_files/bounds_check_simple_loop_bad.c:7: note: main:7:integer:        a = 536870913
+test_source_files/bounds_check_simple_loop_bad.c:6: note: main:6:integer:        a = -1073741824
+test_source_files/bounds_check_simple_loop_bad.c:7: note: main:7:integer:        a = -1073741825
+test_source_files/bounds_check_simple_loop_bad.c:6: note: array `array' lower bound in array[(signed long int)a]
+
+Error: CBMC_WARNING:
+test_source_files/bounds_check_simple_loop_bad.c: scope_hint: In function ‘main’:
+test_source_files/bounds_check_simple_loop_bad.c:6: error: array_bounds : array `array' upper bound in array[(signed long int)a]
+test_source_files/bounds_check_simple_loop_bad.c:1: note: from_entry_point_function:function-call:main
+test_source_files/bounds_check_simple_loop_bad.c:2: note: main:2:integer:        a = 0
+test_source_files/bounds_check_simple_loop_bad.c:2: note: main:2:integer:        a = 5
+test_source_files/bounds_check_simple_loop_bad.c:3: note: main:3:array:        array = ['0', '0', '0', '0', '0']
+test_source_files/bounds_check_simple_loop_bad.c:6: note: array `array' upper bound in array[(signed long int)a]
+

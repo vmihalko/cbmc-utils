@@ -1,0 +1,10 @@
+Error: CBMC_WARNING:
+<unknown>:<unknown>: error: memory-leak : dynamically allocated memory never freed in __CPROVER_memory_leak == NULL
+test_source_files/memory_leak_programs/memory_leak_in_function.c:7: note: from_entry_point_function:function-call:main
+test_source_files/memory_leak_programs/memory_leak_in_function.c:8: note: main:8:pointer:        ptra = NULL
+test_source_files/memory_leak_programs/memory_leak_in_function.c:8: note: from_main:function-call:foo
+test_source_files/memory_leak_programs/memory_leak_in_function.c:4: note: from_foo:function-call:malloc
+test_source_files/memory_leak_programs/memory_leak_in_function.c:4: note: function_parameter_set_in:foo:4:integer:        malloc_size = 1ul
+test_source_files/memory_leak_programs/memory_leak_in_function.c:5: note: from_foo:function-return:foo
+test_source_files/memory_leak_programs/memory_leak_in_function.c:9: note: from_main:function-return:main
+
