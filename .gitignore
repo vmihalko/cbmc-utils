@@ -1,0 +1,6 @@
+# Ignore all hidden files
+.*
+
+# Except of .gitignore anf .gitlab-ci.yml
+!.gitignore
+!.gitlab-ci.yml
