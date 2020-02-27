@@ -1,5 +1,6 @@
 #!/bin/bash
 
+error=0
 for test_file in $(ls test_inputs)
 do
     echo -n "${test_file/.input}: "
@@ -10,7 +11,8 @@ do
     then
         echo -e "\e[1m\e[92mPASS\e[0m"
     else
+		error=1
         echo -e "\e[1m\e[91mFAIL\e[0m"
     fi  
-
 done	
+exit $error
