@@ -81,7 +81,6 @@ def parse_it():
         return errors
 
     if 'cProverStatus' not in parsed[-1]:
-        print('blol', parsed[-1])
         print(f"Error: CBMC_WARNING:{NL}cbmc: fatal error: CBMC crashed")
         return errors
 
