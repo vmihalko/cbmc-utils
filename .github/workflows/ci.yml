@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ test ]
+  pull_request:
+    branches: [ test ]
+
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    container: fedora:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: update
+        run: dnf update --refresh -y
+      - name: install deps
+        run: dnf install -y python3 csdiff diffutils
+      - name: test
+        run: cd tests; ./run_tests.sh
